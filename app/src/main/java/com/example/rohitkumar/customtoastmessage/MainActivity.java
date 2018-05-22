@@ -1,7 +1,7 @@
 package com.example.rohitkumar.customtoastmessage;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
                 (ViewGroup) findViewById(R.id.custom_toast_container));
 
         // setting the string to the textview runtime.
-        TextView text = (TextView) layout.findViewById(R.id.text);
-        text.setText("This is a custom toast");
+        TextView text = layout.findViewById(R.id.text);
+        text.setText(R.string.text_message);
 
         Toast toast = new Toast(getApplicationContext());
         //setting the position of the toast message
